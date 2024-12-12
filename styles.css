@@ -1,0 +1,341 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #111; /* Dark theme background */
+  color: #eee; /* Light text color */
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  background: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('Kaan_3D Stager_3Objects-Camera.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 70px 0;
+  max-width: 800px;
+  line-height: 1.8;
+  color: #ddd;
+  .hero p {
+    text-align: center; /* Center-align the paragraph text */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    color: #ddd; /* Adjust text color for better visibility */
+    line-height: 1.8; /* Add spacing between lines */
+    max-width: 800px; /* Restrict the width for better layout */
+    margin-left: auto; /* Center the paragraph within the container */
+    margin-right: auto;
+  }
+  
+  
+}
+
+
+
+
+.hero .btn {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: linear-gradient(90deg, #ff3300, #cc0000);
+  transform: translateY(-2px);
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  background: #222;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 100%;
+  background: #333;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Welcome Section */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle, #333, #222);
+  animation: background-animation 10s infinite;
+}
+
+@keyframes background-animation {
+  0% {
+    background: radial-gradient(circle, #333, #222);
+  }
+  50% {
+    background: radial-gradient(circle, #555, #111);
+  }
+  100% {
+    background: radial-gradient(circle, #333, #222);
+  }
+}
+
+.intro h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+
+
+.model-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height to center vertically */
+  background-color: #111; /* Optional background color */
+}
+
+.model-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 20px 0; /* Add spacing above and below */
+}
+
+.ar-link-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ar-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ar-link:hover {
+  background: #004c99;
+  transform: translateY(-2px);
+}
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.ar-link {
+  margin-top: 2px;
+}
+
+.ar-link .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ar-link .btn:hover {
+  background-color: #cc5200;
+  transform: translateY(-2px);
+}
+
+.card {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.card h3 {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  margin-left: 20px;
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.card ul li strong {
+  color: #ff9900;
+}
+
+.card ul li:hover {
+  color: #ffd700;
+}
+
+.card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
